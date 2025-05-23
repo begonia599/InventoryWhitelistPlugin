@@ -1,0 +1,20 @@
+name: InventoryWhitelistPlugin
+version: 1.0
+main: io.github.begonia599.inventoryWhitelistPlugin.InventoryWhitelistPlugin
+api-version: 1.21
+depend: [Multiverse-Inventories]
+description: 为 Multiverse-Inventories 添加白名单功能，控制世界切换时可携带的物品
+permissions:
+  inventorywhitelist.bypass:
+    description: 绕过白名单限制
+    default: false
+  inventorywhitelist.custom:
+    description: 允许管理白名单
+    default: op
+commands:
+  mvi:
+    description: 管理 Multiverse-Inventories 白名单功能
+    usage: /<command> <create|add|remove|list|delete|reload> <参数>
+    aliases: [mviw, inventorywhitelist]
+    permission: inventorywhitelist.custom
+    permission-message: "§c你没有权限执行此命令！"

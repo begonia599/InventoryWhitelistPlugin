@@ -1,0 +1,13 @@
+custom-groups:
+  weapons:
+    - minecraft:diamond_sword
+    - minecraft:bow
+    - minecraft:trident
+  tools:
+    - minecraft:iron_pickaxe
+    - minecraft:iron_axe
+messages:
+  cleared: "已清除非白名单物品！"
+  no-group: "目标世界未分组，请检查配置！"
+  bypass: "你已绕过白名单限制！"
+  no-permission: "你没有权限执行此命令！"
